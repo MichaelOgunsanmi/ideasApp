@@ -1,0 +1,4 @@
+{
+    "dbLocal": "mongodb://localhost/ideas",
+    "dbAtlas": "mongodb+srv://ogunsanmimichael:7QovfoxxijWHFwJS@ideas-project-qnat2.mongodb.net/test?retryWrites=true&w=majority"
+}

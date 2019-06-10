@@ -1,0 +1,14 @@
+info: Listening on port 5000... {"timestamp":"2019-06-10 19:08:38"}
+info: failed to connect to server [ideas-project-shard-00-00-qnat2.mongodb.net:27017] on first connect [MongoNetworkError: connection 5 to ideas-project-shard-00-00-qnat2.mongodb.net:27017 closed
+    at TLSSocket.<anonymous> (C:\Users\MICHAEL OGUNSANMI\Desktop\AI & CS\Studying Source Codes\Node.js Express Mongodb dev to deployment by Traversy\ideas\node_modules\mongodb-core\lib\connection\connection.js:352:9)
+    at Object.onceWrapper (events.js:284:20)
+    at TLSSocket.emit (events.js:196:13)
+    at net.js:586:12
+    at TCP.done (_tls_wrap.js:466:7) {
+  name: 'MongoNetworkError',
+  errorLabels: [Array],
+  [Symbol(mongoErrorContextSymbol)]: {}
+}] {"timestamp":"2019-06-10 19:08:41"}
+info: Listening on port 5000... {"timestamp":"2019-06-10 19:13:45"}
+info: Connected to Mongo Atlas... {"timestamp":"2019-06-10 19:13:48"}
+info: Connected to Local MongoDB... {"timestamp":"2019-06-10 19:13:48"}
