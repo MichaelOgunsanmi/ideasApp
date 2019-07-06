@@ -9,7 +9,7 @@ require('./startup/db')()
 
 
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000 || 8080
 
 const server = app.listen(port, () => {
     winston.info(`Listening on port ${port}...`)
