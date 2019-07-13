@@ -11,10 +11,10 @@ const dbConnection = async () => {
     mongoose.set('useFindAndModify', false)
 
     try {
-        const atlasConnection = await mongoose.connect(dbAtlas)
+      //  const atlasConnection = await mongoose.connect(dbAtlas)
         const localDbConnection = await mongoose.connect(dbLocal)
 
-        if(atlasConnection) winston.info('Connected to Mongo Atlas...')
+    //    if(atlasConnection) winston.info('Connected to Mongo Atlas...')
 
         if(localDbConnection) winston.info('Connected to Local MongoDB...')
     } catch (error) {
