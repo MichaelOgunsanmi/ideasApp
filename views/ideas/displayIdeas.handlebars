@@ -1,0 +1,28 @@
+{{#each ideas}}
+    <div class="card mb-3 w-75 mx-auto">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-9 lead">
+                    {{title}}
+                </div>
+
+                <div class="col">
+                    <div class="btn-group float-right">
+                        <a href="/ideas/edit/{{id}}" class="btn btn-dark ">Edit</a>
+                        <a href="/ideas/delete/{{id}}" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            {{details}}
+        </div>
+    </div>
+{{else}}
+    <div class="align-items-center text-center ">
+        <p class="lead">No Ideas added. Add new Idea</p>
+        <a href="/ideas/add" class="btn btn-outline-dark">Add Idea!</a>
+    </div>
+
+{{/each}}
+

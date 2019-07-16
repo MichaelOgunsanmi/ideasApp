@@ -1,3 +1,8 @@
 body{
     font-family: 'Raleway', cursive;
+    height: center;
+}
+
+.dropdown-item{
+    color: white;    
 }

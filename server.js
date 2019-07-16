@@ -4,6 +4,8 @@ const winston = require('winston')
 
 
 require('./startup/logging')()
+require('./startup/session')(app)
+require('./startup/flashMessaging')(app)
 require('./startup/routes')(app)
 require('./startup/views')(app)
 require('./startup/db')()

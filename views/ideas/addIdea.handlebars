@@ -1,0 +1,53 @@
+<div class="card w-75 mx-auto">
+    <div class="card-header display-4 text-center">
+        Add Idea
+    </div>
+
+    <div class="card-body">
+        <form action="/ideas" method="POST">
+            <div class="form-group">
+                <label for="title">Title</label>
+
+                <input 
+                    type="text" 
+                    name="title"
+                    class="form-control {{#if (compare error.key "===" 'title')}} is-invalid {{/if}}"
+                    placeholder="Title of idea" 
+                    value="{{#if error }}{{error.value.title}}{{/if}}" 
+                    required
+                >
+
+                {{#if (compare error.key "===" 'title')}}
+                    <div class="invalid-feedback">
+                        {{error.message}}
+                    </div>
+                {{/if}}
+            </div>
+
+            <div class="form-group">
+                <label for="details">Details</label>
+
+                <textarea 
+                    name="details" 
+                    cols="3" 
+                    rows="8"
+                    class="form-control {{#if (compare error.key "===" 'details')}} is-invalid {{/if}}"
+                    placeholder="Add all the details you can think of!" 
+                    required
+                >{{#if error }}{{error.value.details}}{{/if}}</textarea>
+                
+                {{#if (compare error.key "===" 'details')}}
+                    <div class="invalid-feedback">
+                        {{error.message}}
+                    </div>
+                {{/if}}
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-dark">Add up!</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>

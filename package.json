@@ -12,13 +12,18 @@
   "author": "Michael Ogunsanmi",
   "license": "MIT",
   "dependencies": {
-    "@hapi/joi": "^15.0.3",
-    "config": "^3.1.0",
+    "@hapi/joi": "^15.1.0",
+    "bootstrap": "^4.3.1",
+    "config": "^3.2.0",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "joi": "^14.3.1",
     "joi-objectid": "^2.0.0",
-    "mongoose": "^5.5.14",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.6.4",
     "winston": "^3.2.1"
   },
   "devDependencies": {
