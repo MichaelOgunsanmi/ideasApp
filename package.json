@@ -12,7 +12,7 @@
   "author": "Michael Ogunsanmi",
   "license": "MIT",
   "dependencies": {
-    "@hapi/joi": "^15.1.0",
+    "@hapi/joi": "^15.1.1",
     "bootstrap": "^4.3.1",
     "config": "^3.2.0",
     "connect-flash": "^0.1.1",
